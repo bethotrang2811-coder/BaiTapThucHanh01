@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTTH01 - Mô phỏng bố cục TLU (https://tlu.edu.vn/)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <strong>ĐẠI HỌC THỦY LỢI</strong>
+        <span>THUYLOI UNIVERSITY</span>
+      </a>
+      <div class="header-tools">
+        <form class="search-form" action="#" method="get">
+          <input type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
+          <button type="submit">Tìm</button>
+        </form>
+        <a href="#" class="lang-switch">VN</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. MAIN NAVIGATION -->
+  <nav class="main-nav" aria-label="Điều hướng chính">
+    <div class="container">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#">GIỚI THIỆU</a></li>
+        <li class="nav-item"><a href="#">TIN TỨC</a></li>
+        <li class="nav-item"><a href="#">TUYỂN SINH</a></li>
+        <li class="nav-item"><a href="#">ĐÀO TẠO</a></li>
+        <li class="nav-item"><a href="#">NGHIÊN CỨU</a></li>
+        <li class="nav-item"><a href="#">HỢP TÁC QUỐC TẾ</a></li>
+        <li class="nav-item"><a href="#">SINH VIÊN</a></li>
+        <li class="nav-item"><a href="#">ETLU</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- FLOATING SOCIAL BAR -->
+  <aside class="floating-social" aria-label="Mạng xã hội">
+    <a href="#">FB</a>
+    <a href="#">YT</a>
+    <a href="#">IG</a>
+    <a href="#">TT</a>
+  </aside>
+
+  <!-- 3. MAIN CONTENT -->
+  <main class="main-content">
+    <!-- HERO BANNER -->
+    <section class="hero-banner">
+      <div class="hero-slide">
+        <h1>Chào mừng 44 năm Ngày Nhà giáo Việt Nam (20/11/1982 – 20/11/2026)</h1>
+        <p>Tri ân các thế hệ thầy cô Trường Đại học Thủy lợi</p>
+      </div>
+      <div class="hero-dots">
+        <button type="button" aria-label="Slide 1" class="active"></button>
+        <button type="button" aria-label="Slide 2"></button>
+        <button type="button" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- TIN TỨC & THÔNG BÁO (FLEXBOX 2:1) -->
+    <section class="section news-notice-section">
+      <div class="container">
+        <div class="news-notice-layout">
+          <div class="news-column">
+            <div class="section-header">
+              <h2>TIN TỨC</h2>
+              <a href="#">Xem tất cả</a>
+            </div>
+            <div class="news-list">
+              <article class="news-card">
+                <div class="news-thumb">Ảnh tin 1</div>
+                <div class="news-body">
+                  <h3><a href="#">Trường Đại học Thủy lợi tiếp nhận 02 xe ô tô điện VinFast tài trợ</a></h3>
+                  <time datetime="2026-11-25">25/11/2026</time>
+                  <p>Phục vụ công tác đào tạo và nghiên cứu khoa học tại trường.</p>
+                </div>
+              </article>
+              <article class="news-card">
+                <div class="news-thumb">Ảnh tin 2</div>
+                <div class="news-body">
+                  <h3><a href="#">Sinh viên TLU giành giải Nhì cuộc thi Sáng tạo Vật liệu xây dựng 2026</a></h3>
+                  <time datetime="2026-11-23">23/11/2026</time>
+                  <p>Khẳng định năng lực sáng tạo và nghiên cứu của sinh viên nhà trường.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="notice-column">
+            <div class="section-header">
+              <h2>THÔNG BÁO</h2>
+              <a href="#">Xem thêm</a>
+            </div>
+            <ul class="notice-list">
+              <li><a href="#">Triển khai chương trình TLU Đồng hành học tập giai đoạn 2</a><time datetime="2026-11-13">13/11/2026</time></li>
+              <li><a href="#">Thông báo thu học phí học kỳ 1 năm học 2026–2027</a><time datetime="2026-11-11">11/11/2026</time></li>
+              <li><a href="#">Học bổng Chính phủ Trung Quốc năm 2027</a><time datetime="2026-10-30">30/10/2026</time></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- NHỮNG CON SỐ ẤN TƯỢNG (CSS GRID 5 CỘT) -->
+    <section class="section stats-section">
+      <div class="container">
+        <h2 class="text-center">NHỮNG CON SỐ ẤN TƯỢNG</h2>
+        <div class="stats-grid">
+          <dl class="stat-item"><dt>25.000+</dt><dd>Người học</dd></dl>
+          <dl class="stat-item"><dt>200+</dt><dd>Đối tác trong &amp; ngoài nước</dd></dl>
+          <dl class="stat-item"><dt>95%+</dt><dd>SV tốt nghiệp có việc làm</dd></dl>
+          <dl class="stat-item"><dt>40+</dt><dd>Ngành học</dd></dl>
+          <dl class="stat-item"><dt>300+</dt><dd>Giảng viên Tiến sĩ</dd></dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ĐÀO TẠO - SINH VIÊN - CỰU SINH VIÊN (CSS GRID 3 CỘT) -->
+    <section class="section triple-section">
+      <div class="container">
+        <div class="triple-grid">
+          <article class="info-card">
+            <div class="card-thumb">Ảnh Đào tạo</div>
+            <h3><a href="#">ĐÀO TẠO</a></h3>
+            <p>Thông tin chương trình đào tạo Đại học, Thạc sĩ và Tiến sĩ.</p>
+          </article>
+          <article class="info-card">
+            <div class="card-thumb">Ảnh Sinh viên</div>
+            <h3><a href="#">SINH VIÊN</a></h3>
+            <p>Sinh viên Trường Đại học Thủy lợi được vinh danh Thủ khoa xuất sắc Thủ đô.</p>
+          </article>
+          <article class="info-card">
+            <div class="card-thumb">Ảnh Cựu SV</div>
+            <h3><a href="#">CỰU SINH VIÊN</a></h3>
+            <p>Hành trình kết nối và mở rộng cơ hội học tập cho cộng đồng.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4. SITE FOOTER (FLEXBOX TOP + CSS GRID 4 CỘT) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><strong>ĐẠI HỌC THỦY LỢI</strong></div>
+        <address>Địa chỉ: 175 Tây Sơn - P. Kim Liên - Hà Nội</address>
+        <address>Email: daihocthuyloi@tlu.edu.vn</address>
+        <address>Điện thoại: (024) 38522201</address>
+      </div>
+
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h3>GIỚI THIỆU</h3>
+          <ul>
+            <li><a href="#">Tổng quan</a></li>
+            <li><a href="#">Sứ mạng</a></li>
+            <li><a href="#">Cơ cấu tổ chức</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>TRUY CẬP NHANH</h3>
+          <ul>
+            <li><a href="#">Các đơn vị đào tạo</a></li>
+            <li><a href="#">Tuyển sinh</a></li>
+            <li><a href="#">Nghiên cứu</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>THEO DÕI TLU</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>BẢN ĐỒ</h3>
+          <div class="map-placeholder">Google Maps 175 Tây Sơn</div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p><small>Bản quyền © 2026 Trường Đại học Thủy lợi.</small></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

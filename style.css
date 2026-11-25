@@ -1,0 +1,82 @@
+/* Reset & Base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; line-height: 1.5; color: #1e293b; background: #ffffff; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+.section { padding: 40px 0; }
+.text-center { text-align: center; margin-bottom: 24px; }
+
+/* 1. SITE HEADER (Flexbox row) */
+.site-header { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 14px 0; }
+.header-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.brand { display: flex; flex-direction: column; color: #1d4ed8; }
+.header-tools { display: flex; align-items: center; gap: 16px; }
+.search-form { display: flex; gap: 8px; }
+.search-form input { padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 20px; }
+.search-form button { padding: 6px 14px; border: none; border-radius: 20px; background: #1d4ed8; color: #fff; cursor: pointer; }
+
+/* 2. MAIN NAV (Flexbox row) */
+.main-nav { background: #0023c4; color: #ffffff; }
+.nav-list { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.nav-item { position: relative; }
+.nav-item a { display: block; padding: 14px 8px; font-size: 14px; font-weight: bold; }
+
+/* FLOATING SOCIAL (Position fixed) */
+.floating-social { position: fixed; right: 12px; top: 35%; display: flex; flex-direction: column; gap: 8px; z-index: 100; }
+.floating-social a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 12px; font-weight: bold; color: #1d4ed8; }
+
+/* 3. HERO BANNER (Block + Position) */
+.hero-banner { position: relative; background: #e0f2fe; padding: 72px 16px; text-align: center; }
+.hero-banner h1 { color: #1e3a8a; margin-bottom: 8px; }
+.hero-dots { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; }
+.hero-dots button { width: 12px; height: 12px; border-radius: 50%; border: none; background: #94a3b8; cursor: pointer; }
+.hero-dots button.active { background: #1d4ed8; width: 24px; border-radius: 6px; }
+
+/* 4. TIN TỨC & THÔNG BÁO (Flexbox 2 : 1) */
+.section-header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #1d4ed8; padding-bottom: 8px; margin-bottom: 16px; }
+.section-header h2 { color: #1e3a8a; font-size: 20px; }
+.news-notice-layout { display: flex; gap: 28px; align-items: flex-start; }
+.news-column { flex: 2; }
+.notice-column { flex: 1; }
+.news-list { display: flex; flex-direction: column; gap: 16px; }
+.news-card { display: flex; gap: 16px; align-items: flex-start; padding-bottom: 16px; border-bottom: 1px solid #e2e8f0; }
+.news-thumb { flex: 0 0 140px; height: 95px; background: #dbeafe; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 13px; color: #1e40af; }
+.news-body { flex: 1; }
+.news-body time { display: block; font-size: 12px; color: #64748b; margin: 4px 0; }
+.notice-list li { padding: 10px 0; border-bottom: 1px solid #e2e8f0; }
+.notice-list time { display: block; font-size: 12px; color: #64748b; }
+
+/* 5. STATS SECTION (CSS Grid 5 cột) */
+.stats-section { background: #f8fafc; }
+.stats-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; text-align: center; }
+.stat-item { background: #ffffff; padding: 20px 12px; border-radius: 8px; border: 1px solid #e2e8f0; }
+.stat-item dt { font-size: 24px; font-weight: bold; color: #1d4ed8; }
+.stat-item dd { font-size: 14px; color: #475569; margin-top: 4px; }
+
+/* 6. TRIPLE SECTION (CSS Grid 3 cột) */
+.triple-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.info-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+.card-thumb { height: 140px; background: #e0e7ff; display: flex; align-items: center; justify-content: center; border-radius: 6px; margin-bottom: 12px; color: #3730a3; }
+
+/* 7. SITE FOOTER (Flexbox top + CSS Grid 4 cột) */
+.site-footer { background: #1414e6; color: #ffffff; padding: 40px 0 20px; }
+.footer-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.2); margin-bottom: 24px; }
+.footer-top address { font-style: normal; font-size: 14px; }
+.footer-columns { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 28px; }
+.footer-col h3 { font-size: 15px; margin-bottom: 12px; }
+.footer-col li { margin-bottom: 8px; font-size: 14px; }
+.map-placeholder { height: 110px; background: rgba(255,255,255,0.15); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+.footer-bottom { text-align: center; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 16px; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-columns { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .header-inner, .nav-list, .news-notice-layout, .news-card { flex-direction: column; align-items: stretch; }
+  .stats-grid, .triple-grid, .footer-columns { grid-template-columns: 1fr; }
+  .floating-social { display: none; }
+}
